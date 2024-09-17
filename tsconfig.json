@@ -5,6 +5,7 @@
     "lib": ["ES2015", "DOM", "DOM.Iterable"],
     "ignoreDeprecations": "5.0",
     "skipLibCheck": true,
+    "types": ["@types/estree"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
