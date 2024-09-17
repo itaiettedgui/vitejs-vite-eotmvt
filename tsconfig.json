@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES3",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2015", "DOM", "DOM.Iterable"],
+    "ignoreDeprecations": "5.0",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"]
+}

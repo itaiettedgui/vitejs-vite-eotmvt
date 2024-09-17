@@ -1,0 +1,95 @@
+#kueezItaiTestOverlay a {
+  color: rgb(0 90 163);
+  text-decoration-line: underline;
+  font-weight: 600;
+}
+
+#kueezItaiTestOverlay a:hover {
+  color: rgb(1 132 238);
+}
+
+#kueezItaiTestOverlay img {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+#kueezItaiTestOverlay p {
+  margin: 0.2rem 0 0 0;
+  font-size: clamp(0.66rem, 1.25vw, 0.85rem);
+  text-align: left;
+}
+
+#kueezItaiTestOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2147483647;
+  visibility: hidden;
+}
+
+#kueezItaiTestOverlay h3 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 1.25rem 2rem 0 1.25rem;
+}
+
+#kueezItaiTestOverlay #popup {
+  position: relative;
+  overflow-y: hidden;
+  background-color: white;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.17rem 0.625rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  min-width: 20rem;
+  max-width: 40%;
+  max-height: 60%;
+  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+  aspect-ratio: 9 / 16;
+  gap: 1.25rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+#kueezItaiTestOverlay #popup #articlesContainer {
+  overflow-y: scroll;
+  padding: 1.125rem;
+  height: calc(100% - 3rem);
+  display: grid;
+  text-align: center;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Chrome, Edge and Safari */
+#kueezItaiTestOverlay #popup #articlesContainer::-webkit-scrollbar {
+  height: 0.4rem;
+  width: 0.4rem;
+}
+#kueezItaiTestOverlay #popup #articlesContainer::-webkit-scrollbar-track {
+  border-radius: 0.3125rem;
+  background-color: transparent;
+}
+
+#kueezItaiTestOverlay #popup #articlesContainer::-webkit-scrollbar-thumb {
+  border-radius: 0.3125rem;
+  background-color: #d6dee1;
+}
+
+#kueezItaiTestOverlay #popup #closeButton {
+  all: unset;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  background-image: url('data:image/svg+xml,<svg fill="%23000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1792 1792" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M1082.2,896.6l410.2-410c51.5-51.5,51.5-134.6,0-186.1s-134.6-51.5-186.1,0l-410.2,410L486,300.4 c-51.5-51.5-134.6-51.5-186.1,0s-51.5,134.6,0,186.1l410.2,410l-410.2,410c-51.5,51.5-51.5,134.6,0,186.1 c51.6,51.5,135,51.5,186.1,0l410.2-410l410.2,410c51.5,51.5,134.6,51.5,186.1,0c51.1-51.5,51.1-134.6-0.5-186.2L1082.2,896.6z"></path></g></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
